@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile Page</title>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <h1>Welcome to My Personal Profile Page</h1>
+    </header>
+
+    <!--Navigation Section-->
+    <nav>
+        <a href="#profile">Home</a> | <a href="#form">Form</a> |
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <section id="Profile">
+        <article>
+            <h2>My Profile Information</h2>
+            <img src="image/photo_6289481917526644765_y.jpg" alt="Jennychia Rechel Johnny" width="140">
+        </article>
+    </section>
+
+    <!--Table Section-->
+    <table border="2">
+        <tr>
+            <th>Attributes</th><br>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Jennychia Rechel Johnny</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Occupation</td>
+            <td>Student</td>
+        </tr>
+    </table>
+
+    <!--Form Section-->
+    <h2>User Information Form</h2>
+    <form action="submit_form.php" method="post">
+        <!--Full name Section-->
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fullname"><br><br>
+
+        <!--Email Section-->
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <!--Gender Section-->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!--Checkbox Hoobies Section-->
+        <label for="favourite hobbies">Favourite Hobbies</label><br>
+        <input type="checkbox" id="gaming" name="hobby" value="Gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="watching movies" name="hobby" value="Watching Movies">
+        <label for="watching movies">Watching Movies</label>
+        <input type="checkbox" id="listening music" name="hobby" value="Listening Music">
+        <label for="listening music">Listening Music</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>Copyright &copy; 2024 JennychiaRechelJohnny</p>
+    </footer>
+</body>
+</html>
