@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=5000-width, initial-scale=1.0">
+    <title>Contact Page - Interactive Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .box1 {
+            border: 2px solid black;
+            background-color: lightpink;
+            padding: 5px;
+            text-align: center;
+        }
+        .box2 {
+            border: 2px solid black;
+            background-color: rgb(216, 182, 255);
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Contact Page - Interactive Form</h1>
+
+    <!-- Calculator Box -->
+    <div class="box1">
+    <h2>Inline Calculator</h2>
+
+    <p>Nombor 1:</p>
+    <input type="number" id="n1" oninput="document.getElementById('sum').value = Number(n1.value) + Number(n2.value)">
+
+    <p>+</p>
+
+    <p>Nombor 2:</p>
+    <input type="number" id="n2" oninput="document.getElementById('sum').value = Number(n1.value) + Number(n2.value)">
+
+    <p>Jumlah:</p>
+    <output id="sum">0</output>
+    </div>
+
+    <!-- Contact Form Box -->
+    <div class="box2">
+        <h2>Hubungi Kami</h2>
+
+        <form>
+            <p>Email:</p>
+            <input type="email" required>
+
+            <p>Tarikh Pilihan Dihubungi:</p>
+            <input type="date">
+
+            <p>Tahap Kepuasan (0-10):</p>
+            <input type="range" min="0" max="10">
+
+            <br><br>
+            <input type="submit" value="Hantar" style="width:40%;">
+        </form>
+    </div>
+
+    <p>&copy; 2025</p>
+
+</body>
+</html>
