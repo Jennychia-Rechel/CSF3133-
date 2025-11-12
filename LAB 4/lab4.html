@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 {text-decoration: underline;}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5f7;
+}
+
+header {
+    background-color: #fc067d;
+    color: white;
+    text-align: center;
+    padding: 20px; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 5px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+nav a:visited {
+    color: lightgray;
+}
+
+nav a:active {
+    color: blue;
+}
+
+section {
+    text-align: center;
+    padding: 15px;
+}
+
+video {
+    width: 450px;
+    height: 260px;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    background-color: #f2f2f2;
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #fc067d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my personal webpage! 🌸</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>This page is created as part of my lab exercise to share a little bit about myself, my family, and my friends. Through this website, I hope to show the special people and moments that make my life meaningful.</p>
+        <p>Feel free to explore each section and watch the videos I have included — they represent who I am and what truly matters to me 💖.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <article>
+            <p>My name is Jennychia, and I am a student who loves creativity, learning new things, and spending time with the people I love. This webpage reflects three important parts of my life — myself, my family, and my friends.</p>
+
+            <p>My family means the world to me; they always support and guide me. My friends bring joy and laughter into my days, and they are like my second family. Together, they make my life colourful and full of memories.</p>
+
+            <p>I created this page not only to complete my lab exercise but also to express my appreciation to the people who are always by my side 🌈.</p>
+        </article>
+    </section>
+
+    <section id="media">
+    <h2>Videos</h2>
+
+    <video controls width="320">
+        <source src="C:\Users\Huawei\Desktop\VSD\lab module 4\family.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p class="caption">My lovely family who always supports, loves, and inspires me every day. ❤️</p>
+
+    <video controls width="320">
+        <source src="C:\Users\Huawei\Desktop\VSD\lab module 4\me.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p class="caption">A short video introducing myself — my goofiness. 💫</p>
+
+    <video controls width="320">
+        <source src="C:\Users\Huawei\Desktop\VSD\lab module 4\friends.MOV" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p class="caption">My amazing friends who fill my life with laughter, fun, and unforgettable memories. 🌸</p>
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <div class="form-row">
+        <div class="gender">
+            <p>Gender:</p>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+
+        <div class="hobbies">
+            <p>Favorite Hobbies:</p>
+            <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+            <label><input type="checkbox" name="hobby" value="music"> Music</label>
+            <label><input type="checkbox" name="hobby" value="travel"> Travel</label>
+        </div>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 | Jennychia Rechel Johnny</p>
+    </footer>
+
+</body>
+</html>
