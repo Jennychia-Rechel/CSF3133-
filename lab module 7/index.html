@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Advanced Web Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="side-nav">
+        <a href="#hero">Home</a>
+        <a href="#form-section">Login</a>
+        <a href="#slideshow-section">Gallery</a>
+        <a href="#profile-section">Profile</a>
+        <a href="#interactive-section">Interactive</a>
+    </nav>
+
+    <main>
+        <header id="hero" class="hero-section">
+            <div class="hero-overlay">
+                <h1>ADVENTURE AWAITS</h1>
+                <p>Explore the world with our premium travel guides.</p>
+            </div>
+        </header>
+
+        <section id="form-section" class="form-container">
+            <div class="login-card">
+                <h3>Member Login</h3>
+                <form>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="slideshow-section" class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Nature 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Nature 2">
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80" alt="Nature 3">
+            </div>
+        </section>
+
+        <section id="profile-section" class="profile-container">
+            <div class="profile-card">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Profile Image">
+                <h2>John Doe</h2>
+                <p>Full-Stack Developer & Explorer</p>
+                <div class="social-icons">
+                    <span>🌐</span> <span>🐦</span> <span>📸</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive-section" class="container">
+            <h2>Project Status</h2>
+            <div class="progress-container" style="background: #ddd; border-radius: 10px; margin-bottom: 10px;">
+                <div id="progress-bar" style="width: 0%; height: 20px; background: #007bff; border-radius: 10px; transition: width 0.3s;"></div>
+            </div>
+            <button id="increase-progress" class="collapsible" style="margin-bottom: 20px;">Increase Progress</button>
+
+            <div class="collapsible-wrapper">
+                <button class="collapsible">Click to Expand/Collapse Details</button>
+                <div class="content">
+                    <p>This is the collapsible content. Click the button above to toggle between showing and hiding this section.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
